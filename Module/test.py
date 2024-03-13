@@ -11,3 +11,6 @@ print(my_module.func())
 
 # print(name)
 # print(func())
+
+import sys
+print(sys.path)
