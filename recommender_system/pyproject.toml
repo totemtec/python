@@ -1,0 +1,30 @@
+[project]
+name = "recommender-system"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Totem", email = "majianglin@totemtec.com" }
+]
+dependencies = [
+    "pymilvus>=2.4.0",
+    "redis>=5.0.3",
+    "pandas>=2.2.2",
+    "sentence-transformers>=2.7.0",
+    "kaggle>=1.6.12",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/recommender_system"]
